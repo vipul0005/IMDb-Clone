@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Clone</title>
+    <link rel="stylesheet" href="imdb.css">
+    <script src="https://kit.fontawesome.com/8281cb5644.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation bar that contains home, menu, search and favourite -->
+    <header id="body-header">
+        <nav>
+            <ul class="horizontal-list">
+                <li id="home"><button id="home-button"><img src="./res/imdb.jpg"></button></li>
+                <li class="dropdown">
+                    <h2><i class="fa-solid fa-bars"></i>
+                    Menu</h2>
+                    <ul class="dropdown-content">
+                        <li><a href="#movies">Movies</a></li>
+                        <li><a href="#anime">Anime</a></li>
+                        <li><a href="#web-series">Web Series</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="search-container">
+                        <input type="text" id="search-box" placeholder="Search IMDb">
+                        <button type="submit" id="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                </li>
+                <li><button id="goto-favourites-button">Favorite</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="movie-card-container">
+
+        </div>
+              <!-- Trailer Section  -->
+        <section class="video-section">
+            <h1>Trailers</h1>
+            <h2 id="movies"> Movies</h2>
+            <div class="video-container">
+                <div class="video-box">
+                    <img src="./res/oppenheimer.jpg" alt="Oppenheimer">
+                    <h3>Oppenheimer</h3>
+                    <a href="https://youtu.be/uYPbbksJxIg" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+                
+                <div class="video-box">
+                    <img src="./res/tmnt.jpg" alt="Teenage Mutant Ninja Turtles">
+                    <h3>Teenage Mutant Ninja Turtles</h3>
+                    <a href="./res/TNMT.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/saw.jpg" alt="Saw X">
+                    <h3>Saw X</h3>
+                    <a href="./res/Saw_2023.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/teb.png" alt="The Exorcist Believer">
+                    <h3>The Exorcist Believer</h3>
+                    <a href="./res/The_Exorcist_Believer.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/mi.jpg" alt="Mission Impossible">
+                    <h3>Mission Impossible: 7</h3>
+                    <a href="./res/MI.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/wonka.jpg" alt="Wonka">
+                    <h3>Wonka</h3>
+                    <a href="./res/Wonka.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Gadar2.jpg" alt="Gadar 2">
+                    <h3>Gadar 2</h3>
+                    <a href="./res/Gadar2.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Blue_Beetle..jpeg" alt="Blue Beetle">
+                    <h3>Blue Beetle</h3>
+                    <a href="./res/Blue_Beetle.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2 id="anime">Anime</h2>
+            <div class="video-container">
+                <div class="video-box">
+                    <img src="./res/One_Piece.jpg" alt="One Piece">
+                    <h3>One Piece</h3>
+                    <a href="./res/One_Piece.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+               
+                <div class="video-box">
+                    <img src="./res/Bleach.jpg" alt="Bleach">
+                    <h3>Bleach</h3>
+                    <a href="./res/Bleach.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Black Clover.jpg" alt="Black Clover">
+                    <h3>Black Clover</h3>
+                    <a href="./res/Black Clover.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/The_dangers_in_my_heart.jpg" alt="The dangers In My heart">
+                    <h3>The Dangers In My Heart</h3>
+                    <a href="./res/The_dangers_in_my_heart.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Jujutsu_Kaisen.png" alt="Jujutsu Kaisen">
+                    <h3>Jujutsu Kaisen</h3>
+                    <a href="./res/Jujutsu_Kaisen.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Zom_100.png" alt="Zom 100">
+                    <h3>Zom 100</h3>
+                    <a href="./res/Zom_100.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2 id="web-series">Web Series</h2>
+            <div class="video-container">
+                <div class="video-box">
+                    <img src="./res/Loki_S2.jpg" alt="Loki Season-2">
+                    <h3>Loki Season-2</h3>
+                    <a href="./res/Loki_S2.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+               
+                <div class="video-box">
+                    <img src="./res/Prison_break.jpg" alt="Prison Break">
+                    <h3>Prison Break</h3>
+                    <a href="./res/Prison_break.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Peaky_blinder.jpg" alt="Peaky Blinders">
+                    <h3>Peaky Blinders</h3>
+                    <a href="./res/Peaky_blinder.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Stranger_things.jpg" alt="Stranger Things">
+                    <h3>Stranger Things</h3>
+                    <a href="./res/Stranger_things.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/The_Witcher_S3.jpg" alt="The Witcher S3">
+                    <h3>The Witcher S3</h3>
+                    <a href="./res/The_Witcher_S3.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                <div class="video-box">
+                    <img src="./res/Kota_Factory_2.jpg" alt="Kota Factory">
+                    <h3>Kota Factory</h3>
+                    <a href="./res/Kota_Factory_2.mp4" class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script type="text/javascript" src="imdb.js"></script>
+   
+</body>
+</html>
